@@ -20,3 +20,11 @@ function watchmen_form_vopros_embed_question_alter(&$form, $form_state) {
 
   $form['user_answer_preference']['#attached']['js'][] = drupal_get_path('theme', 'watchmen') . '/js/vopros_chat_status.js';
 }
+
+/**
+ * Implements hook_vopros_embed_tab_style_alter().
+ */
+function watchmen_vopros_embed_tab_style_alter(&$path) {
+  $path[] = '//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css';
+  $path[] = url(drupal_get_path('theme', 'watchmen') . '/css/ask_vopros.css', array('absolute' => TRUE));
+}
