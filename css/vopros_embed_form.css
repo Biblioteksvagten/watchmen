@@ -3,7 +3,7 @@
  * Styles for the vopros_embed popup.
  */
 
-body.vopros-embed body {
+body.vopros-embed {
   font-family: Arial, helvetica, sans-serif;
   font-size: 14px;
   background-color: #f6f6f6;
