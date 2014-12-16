@@ -3,7 +3,7 @@
  * Styles for the vopros_embed popup.
  */
 
-body {
+body.vopros-embed body {
   font-family: Arial, helvetica, sans-serif;
   font-size: 14px;
   background-color: #f6f6f6;
@@ -13,12 +13,12 @@ body {
   background-repeat: no-repeat;
 }
 
-#page,
-#main-wrapper {
+body.vopros-embed #page,
+body.vopros-embed #main-wrapper {
   background-color: transparent;
 }
 
-.header {
+body.vopros-embed .header {
   background-image: url(../images/logo.png);
   background-position: right top;
   background-repeat: no-repeat;
@@ -26,23 +26,23 @@ body {
   margin-bottom: 60px;
 }
 
-h1#page-title {
+body.vopros-embed h1#page-title {
   font-size: 1.5em;
   padding: 7px 0;
 }
 
 @media all AND (min-width: 500px) {
-  form > div {
+  body.vopros-embed form > div {
     display: table;
     width: 100%;
   }
-  .answer_type {
+  body.vopros-embed .answer_type {
     display: table-cell;
     width: 200px;
     float: none;
     vertical-align: top;
   }
-  .answer_details {
+  body.vopros-embed .answer_details {
     display: table-cell;
     float: none;
     width: auto;
@@ -51,58 +51,45 @@ h1#page-title {
   }
 }
 
-@media all AND (min-width: 500px) {
-  .answer_type {
-    /* float: left; */
-    /* width: 150px; */
-    /* max-width: 200px; */
-  }
-}
-
-/* .answer_details { */
-/*   float: left; */
-/*   width: 100%; */
-/* } */
-
-.form-item {
+body.vopros-embed .form-item {
   margin-top: 0;
 }
 
-.form-required {
+body.vopros-embed .form-required {
   color: #01c676;
 }
 
-.form-item label {
+body.vopros-embed .form-item label {
   font-family: Arial, helvetica, sans-serif;
   font-size: 14px;
   font-weight: normal;
 }
 
-.form-item input:focus,
-.form-item textarea:focus {
+body.vopros-embed .form-item input:focus,
+body.vopros-embed .form-item textarea:focus {
   outline: none;
 }
 
-.form-item input {
+body.vopros-embed .form-item input {
   border: 2px solid #01c676;
   border-radius: 2px;
 }
 
-.form-item textarea {
+body.vopros-embed .form-item textarea {
   border: 0;
   background-color: white;
 }
 
-.resizable-textarea .grippie {
+body.vopros-embed .resizable-textarea .grippie {
   background-color: white;
   border: 0;
 }
 
-.form-item-user-answer-preference .form-radios .form-item {
+body.vopros-embed .form-item-user-answer-preference .form-radios .form-item {
   margin: 0 0 1em;
 }
 
-.form-item-user-answer-preference .form-item label {
+body.vopros-embed .form-item-user-answer-preference .form-item label {
   font-weight: normal;
   margin: 0;
   padding: 0;
@@ -113,68 +100,67 @@ h1#page-title {
   width: 100%;
 }
 
-.form-item-user-answer-preference .form-item label span {
+body.vopros-embed .form-item-user-answer-preference .form-item label span {
   display: table-cell;
   vertical-align: middle;
   height: 35px;
 }
 
-.form-item-user-answer-preference .form-item label .fa-angle-right {
+body.vopros-embed .form-item-user-answer-preference .form-item label .fa-angle-right {
   display: table-cell;
   background-color: #01a863;
   vertical-align: middle;
   font-weight: bold;
 }
 
-.form-item-user-answer-preference .active_answer_type label {
+body.vopros-embed .form-item-user-answer-preference .active_answer_type label {
   background: #01a863;
   color: #ddd;
 }
 
-.form-item-user-answer-preference .disabled_answer_type label,
-.form-item-user-answer-preference .form-disabled label {
+body.vopros-embed .form-item-user-answer-preference .disabled_answer_type label,
+body.vopros-embed .form-item-user-answer-preference .form-disabled label {
   color: white;
   background: #aee8d0;
   cursor: default;
 }
 
-.form-item-user-answer-preference .disabled_answer_type label .fa-angle-right,
-.form-item-user-answer-preference .form-disabled label .fa-angle-right {
+body.vopros-embed .form-item-user-answer-preference .disabled_answer_type label .fa-angle-right,
+body.vopros-embed .form-item-user-answer-preference .form-disabled label .fa-angle-right {
   background: #aedfca;
 }
 
-.form-item-question-content label {
+body.vopros-embed .form-item-question-content label {
   display: block;
   padding: 12px;
   background: #01c676;
   color: white;
 }
 
-input.form-submit {
+body.vopros-embed input.form-submit {
   border: 0;
   border-radius: 0;
   font-weight: normal;
   margin: 0;
   padding: 10px;
-  /* display: table; */
   background: #01c676;
   color: white;
   cursor: pointer;
 }
 
-input.form-submit:hover {
+body.vopros-embed input.form-submit:hover {
   background: #01c676;
 }
 
-.chat-status-message .fa-exclamation-triangle {
+body.vopros-embed .chat-status-message .fa-exclamation-triangle {
   color: #01c676;
 }
 
-.form-item-question-deadline  .form-item input {
+body.vopros-embed .form-item-question-deadline  .form-item input {
   display: none;
 }
 
-.form-item-question-deadline .form-item label:before {
+body.vopros-embed .form-item-question-deadline .form-item label:before {
   color: #01c676;
   padding-right: 10px;
   /* Copied directly from FontAwesomes CSS. */
@@ -194,6 +180,6 @@ input.form-submit:hover {
 
 }
 
-.form-item-question-deadline .form-item.checked label:before {
+body.vopros-embed .form-item-question-deadline .form-item.checked label:before {
   content: "\f111";
 }
