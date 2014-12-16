@@ -39,12 +39,10 @@ body.vopros-embed h1#page-title {
   body.vopros-embed .answer_type {
     display: table-cell;
     width: 200px;
-    float: none;
     vertical-align: top;
   }
   body.vopros-embed .answer_details {
     display: table-cell;
-    float: none;
     width: auto;
     vertical-align: top;
     padding-left: 10px;
@@ -63,6 +61,12 @@ body.vopros-embed .form-item label {
   font-family: Arial, helvetica, sans-serif;
   font-size: 14px;
   font-weight: normal;
+}
+
+body.vopros-embed input[type='text'],
+body.vopros-embed input[type='number'],
+body.vopros-embed textarea {
+  width: 100%;
 }
 
 body.vopros-embed .form-item input:focus,
@@ -85,12 +89,16 @@ body.vopros-embed .resizable-textarea .grippie {
   border: 0;
 }
 
+body.vopros-embed .form-item-user-answer-preference .form-item input {
+  display: none;
+}
+
 body.vopros-embed .form-item-user-answer-preference .form-radios .form-item {
   margin: 0 0 1em;
 }
 
 body.vopros-embed .form-item-user-answer-preference .form-item label {
-  font-weight: normal;
+  text-align: center;
   margin: 0;
   padding: 0;
   display: table;
