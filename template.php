@@ -10,15 +10,18 @@
  */
 function watchmen_form_vopros_embed_question_alter(&$form, $form_state) {
   drupal_add_css('//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css', array('type' => 'external'));
-  // Hide the answer preference label visually.
-  $form['user_answer_preference']['#title_display'] = 'invisible';
 
   // Add angle icon to answer preference items.
-  foreach ($form['user_answer_preference']['#options'] as $key => &$val) {
-    $val = '<span>' . $val . '</span><i class="fa fa-2x fa-fw fa-angle-right"></i>';
-  }
+  if (isset($form['user_answer_preference'])) {
+    // Hide the answer preference label visually.
+    $form['user_answer_preference']['#title_display'] = 'invisible';
 
-  $form['user_answer_preference']['#attached']['js'][] = drupal_get_path('theme', 'watchmen') . '/js/vopros_chat_status.js';
+    foreach ($form['user_answer_preference']['#options'] as $key => &$val) {
+      $val = '<span>' . $val . '</span><i class="fa fa-2x fa-fw fa-angle-right"></i>';
+    }
+
+    $form['user_answer_preference']['#attached']['js'][] = drupal_get_path('theme', 'watchmen') . '/js/vopros_chat_status.js';
+  }
 }
 
 /**
